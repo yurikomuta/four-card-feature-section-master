@@ -1,9 +1,9 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,48 +11,46 @@ html {
     font-size: 62.5%;
 }
 
-body{
+.container {
     font-size: 15px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     background-color: hsla(228, 6, 66, 0.05);
     padding: 6rem 0rem 6rem 0rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-footer{
+footer {
     text-align: center;
     padding-top: 5em;
     font-size: 1.4rem;
 }
 
-.attribution { 
-    font-size: 11px; 
+.attribution {
+    font-size: 11px;
     text-align: center;
 }
 
-.attribution a { 
+.attribution a {
     color: hsl(228, 45%, 44%);
 }
+
 .top {
     color: #89898f;
     font-weight: 200;
     font-size: 2.4rem;
     width: 30rem;
     text-align: center;
-    }
+}
 
-.top-bold{
+.top-bold {
     font-weight: 800;
     color: #717175;
 }
 
-
-
-.subtext{
+.subtext {
     color: hsl(229, 6%, 66%);
     width: 30rem;
     text-align: center;
@@ -61,8 +59,18 @@ footer{
     font-weight: 400;
 }
 
+
 /* card */
-.default-card{
+
+.cards {
+    display: flex;
+}
+
+.card-marine {
+    align-self: center;
+}
+
+.default-card {
     display: flex;
     flex-direction: column;
     width: 31.5rem;
@@ -85,19 +93,19 @@ footer{
     left: 0;
 }
 
-.default-card_container{
+.default-card_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.default-card_container--middle{
+.default-card_container--middle {
     display: flex;
     flex-direction: column;
 }
 
-.card-text{
+.card-text {
     margin-bottom: 4rem;
     font-size: 1.3rem;
     font-weight: 400;
@@ -105,12 +113,12 @@ footer{
     text-align: left;
 }
 
-.card_img{
+.card_img {
     width: 6.4rem;
     align-self: flex-end;
 }
 
-.card-title{
+.card-title {
     color: #89898f;
     text-align: left;
     font-size: 1.6rem;
@@ -120,53 +128,19 @@ footer{
 
 
 /* COLOR */
-.card-blue::before{
+
+.card-blue::before {
     background-color: hsl(180, 62%, 55%);
 }
 
-.card-pink::before{
-    background-color:hsl(0, 78%, 62%);
+.card-pink::before {
+    background-color: hsl(0, 78%, 62%);
 }
 
-.card-yellow::before{
-    background-color:hsl(34, 97%, 64%);
+.card-yellow::before {
+    background-color: hsl(34, 97%, 64%);
 }
 
-.card-marine::before{
-    background-color:hsl(212, 86%, 64%);
+.card-marine::before {
+    background-color: hsl(212, 86%, 64%);
 }
-
-/* RESPO */
-@media only screen and (min-width: 1000px) {
-
-    footer {
-      font-size: 1.6rem;
-    }
-  
-    .default-card {
-      border-radius: 5px;
-      width: 35rem;
-    }
-  
-    .default-card_container--middle {
-      padding: 0 2rem 0 2rem;
-    }
-  
-    .default-card_container {
-      flex-direction: row;
-    }
-  
-    .top {
-      font-size: 3.6rem;
-      width: 500px;
-    }
-  
-    .subtext {
-      font-size: 1.5rem;
-      width: 50rem;
-    }
-  
-    .card-text {
-      font-size: 1.3rem;
-    }
-  }
